@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bake the world</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
     <script
       src="https://kit.fontawesome.com/451092a64a.js"
       crossorigin="anonymous"
@@ -14,13 +15,44 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rubik:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
     <div class="container">
-      <section class="The-hero-section">
+      <header class="header-nav">
+        <div class="header-main">
+        <div class="logo">
+          <img src="images/bakeworld-high-resolution-color-logo_300x300.png" class="logo-img">
+        </div>
+        <div class="mobile-nav">
+          <button class="open-bar"><i class="fa-solid fa-bars"></i></button>
+          <button class="close close-btn">
+          <i class="fa fa-times close-bar"></i>
+          </button>
+      </div>
+      </div>
+     <nav>
+        
+     <div class="items-nav hidden navigation">
+            <a href="#The-hero-section" class="nav-menu">Home</a>
+            <hr>
+            <a href="#how it works" class="nav-menu -item">how it works</a>
+            <hr>
+            <a href="#Menu" class="nav-menu">Menu</a>
+            <hr>
+            <a href="#testimonial" class="nav-menu">testimonial</a>
+            <hr> 
+            <a href="#FAQs" class="nav-menu">FAQs </a>
+            <hr> 
+            <a href="who are we" class="nav-menu">who are we </a>
+      </div>
+</nav>
+     
+      </header>
+      <section id="Home">
         <div class="hero-box">
           <div class="hero-text-box">
-            <h1>Let us bake a sweet and unforgetable memory for you!</h1>
+            <h1>Let us <figure class="heading-style"> bake</figure> a sweet and unforgetable memory for you!</h1>
             <p class="hero-description">
               The smart 365-days-per-year bakes that create Sweetness,Tailored
               to your personal tastes and sweet luxury, delivered to your door,
@@ -36,6 +68,7 @@
               class="hero-image"
             />
           </div>
+          
         </div>
 
         <div class="customers-delivers-box">
@@ -80,7 +113,7 @@
       </section>
 
       <!--how it works-->
-      <section class="how it works">
+      <section id="how it works">
         <h2>how to Order</h2>
         <div class="step-box">
           <div class="account-step-box">
@@ -110,7 +143,7 @@
         </div>
       </section>
       <!--menu section-->
-      <section>
+      <section id="Menu">
         <h2>Our Menu</h2>
         <div class="menu-icons">
           <div class="bread-icons">
@@ -123,10 +156,11 @@
           </div>
           <div class="cakes-icons">
             <i class="fa-solid fa-cake-candles"></i>
-            <p class="cakes icon-description">Cakes</p>
+            <p class="cakes- icon-description">Cakes</p>
           </div>
         </div>
         <!--bread-menu-->
+        <div class="bread bread-sample">
         <h2>Breads</h2>
         <div class="bread-box bread-menu">
           <div class="fresh-bread-box menu-boxes">
@@ -137,7 +171,7 @@
           />
           <h5>Home made bread</h5>
           <strong>&#8358 700</strong>
-          <button class="btn btn-card">add to card</button>
+           <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
           <div class="french-bread-box menu-boxes">
           <img
@@ -147,7 +181,7 @@
           />
           <h5>French la-baguete</h5>
           <strong>&#8358 1,000</strong>
-          <button class="btn btn-card">add to card</button>
+          <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
 
           <div class="roll-bread-box menu-boxes">
@@ -158,61 +192,263 @@
           />
           <h5>Organic bread</h5>
           <strong>&#8358 1,200</strong>
-          <button class="btn btn-card">add to card</button>
+          <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
         </div>
+        </div>
          <!--cookies-menu-->
+         <div class="cookies cookies-sample-menu">
          <h2>Cookies</h2>
          <div class="cookies-box cookies-menu">
           <div class="chocolate-cookies-box menu-boxes">
             <img src="images/cookies-1264263_640_450x400.jpg" class="chocolate-cookies menu-imgs " alt="chocolate cookies">
             <h5>Chocolate chip cookies</h5>
           <strong>&#8358 2,500</strong>
-          <button class="btn btn-card">add to card</button>
+          <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
           
            <div class="macaroon-cookies-box menu-boxes">
             <img src="images/macarons-2548810_640_450x400.jpg" class="macaroon-cookies menu-imgs " alt="chocolate cookies">
             <h5>Macarons rapsberies cookies</h5>
           <strong>&#8358 2,500</strong>
-          <button class="btn btn-card">add to card</button>
+          <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
 
            <div class="event-cookies-box menu-boxes">
             <img src="images/happy-birthday-3984153_640_450x400.jpg" class="event-cookies menu-imgs " alt="chocolate cookies">
             <h5>special event cookies</h5>
           <strong>&#8358 4,500</strong>
-          <button class="btn btn-card">add to card</button>
+          <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
          </div>
+         </div>
          <!-- cakes-boxex --->
+         <div class="cakes cakes-menu-sample">
           <h2 class="cakes-headers">Cakes</h2>
          <div class="cakes-box cakes-menu">
           <div class="chocolate-cakes-box menu-boxes">
             <img src="images/chocolate-cake_1_450x400.jpg" class="chocolate-cakes menu-imgs " alt="chocolate cookies">
             <h5>Chocolate cakes</h5>
           <strong>&#8358 2,500</strong>
-          <button class="btn btn-card">add to card</button>
+          <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
           
            <div class="cup-cakes-box menu-boxes">
             <img src="images/cupcake-3723832_640_1_450x400.jpg" class="cup-cakes menu-imgs " alt="chocolate cookies">
             <h5>cup-cakes</h5>
           <strong>&#8358 2,500</strong>
-          <button class="btn btn-card">add to card</button>
+          <a class="btn order-btn btn-card" href="#">add to card</a>
           </div>
 
            <div class="event-cakes-box menu-boxes">
             <img src="images/pexels-rodrigo-souza-2531546_1_450x450.jpg" class="event-cakes menu-imgs " alt="chocolate cookies">
             <h5>special event cakes</h5>
           <strong>&#8358 4,500</strong>
-          <button class="btn btn-card">add to card</button>
-          </div>
-
+          <a class="btn order-btn btn-card" href="#">add to card</a>
+           </div>
          </div>
-
-
+         </div>
       </section>
+      <!--testimonies-->
+      <section id="testimonial">
+        <div class="testimony-tex-box" >
+       <h6 class="testimony-header">see what our <figure class="satisfied-customer">satisfied customers</figure> are saying about our services</h6>
+       </div>
+       <section class="testimonies testimony-1">
+              <div class="customer-impression-box">
+                <!-- <div>
+                  <button class="btn-slide">
+                  <i class="fas fa-chevron-left"></i>
+                  </button>
+                  </div> -->
+                <div class="figures-img-and-name">
+                  
+                <div>
+                   <img src="images/customer-6.jpg" class="customer-img">
+              </div>
+              
+              <div class="figures-personal-details">
+              <figure class="figure-names">Yasmine</figure>
+              <figure class="figure-status">Verified buyer</figure>
+            </div>
+            </div>
+            <div>
+              <!-- <button class="btn-slide">
+              <i class="fas fa-chevron-right"></i>
+              </button> -->
+              </div>
+            </div>
+            <blockquote>
+            "We needed the same cakes as the one we order a week prior.
+            Not only did the find the original order, but we also received it on
+            time.Excellent!"
+          </blockquote>          
+      </section>
+      <!--section2-->
+       <section class="testimonies testimony-2">
+              <div class="customer-impression-box">
+                <div>
+                  <button class="btn-slide">
+                  <i class="fas fa-chevron-left"></i>
+                  </button>
+                  </div>
+                <div class="figures-img-and-name">
+                  
+                <div>
+                   <img src="images/customer-4.jpg" class="customer-img">
+              </div>
+              
+              <div class="figures-personal-details">
+              <figure class="figure-names">Faiz</figure>
+              <figure class="figure-status">Verified buyer</figure>
+            </div>
+            </div>
+            <div>
+              <button class="btn-slide">
+              <i class="fas fa-chevron-right"></i>
+              </button>
+              </div>
+            </div>
+            <blockquote>
+            "We needed the same cakes as the one we order a week prior.
+            Not only did the find the original order, but we also received it n
+            time.Excellent!"
+          </blockquote>           
+      </section>
+      <!--section3-->
+       <section class="testimonies testimony-3">
+              <div class="customer-impression-box">
+                <div>
+                  <button class="btn-slide">
+                  <i class="fas fa-chevron-left"></i>
+                  </button>
+                  </div>
+                <div class="figures-img-and-name">
+                  
+                <div>
+                   <img src="images/customer-1.jpg" class="customer-img">
+              </div>
+              
+              <div class="figures-personal-details">
+              <figure class="figure-names">Alysha</figure>
+              <figure class="figure-status">Verified buyer</figure>
+            </div>
+            </div>
+            <div>
+              <button class="btn-slide">
+              <i class="fas fa-chevron-right"></i>
+              </button>
+              </div>
+            </div>
+            <blockquote>
+            "We needed the same cakes as the one we order a week prior.
+            Not only did the find the original order, but we also received it in
+            time.Excellent!"
+          </blockquote>  
+          </section>
+          <!--section 4-->
+           <section class="testimonies testimony-4">
+              <div class="customer-impression-box">
+                <div>
+                  <button class="btn-slide">
+                  <i class="fas fa-chevron-left"></i>
+                  </button>
+                  </div>
+                <div class="figures-img-and-name">
+                  
+                <div>
+                   <img src="images/steve.jpg" class="customer-img">
+              </div>
+              
+              <div class="figures-personal-details">
+              <figure class="figure-names">Steve</figure>
+              <figure class="figure-status">Verified buyer</figure>
+            </div>
+            </div>
+            <div>
+              <button class="btn-slide">
+              <i class="fas fa-chevron-right"></i>
+              </button>
+              </div>
+            </div>
+            <blockquote>
+            "We needed the same cakes as the one we order a week prior.
+            Not only did the find the original order, but we also received it in
+            time.Excellent!"
+          </blockquote>   
+        </section>
+      </section>  
+       <!--FAQs section--> 
+      <section id="FAQs">
+        <h6 class="FAQ-header">Frequently Ask Questions</h6>
+        <div class="FAQ box">
+           <div class="faq1">
+            <h6 class="common-faqs">How do I place an order?<i class="fa-solid fa-chevron-down quest1"></i></h6>
+            <p class="faqs-response response1">You may place an order through our website; by calling us at (070) 3102-4105; or by visiting our bakery.<i class="fa-solid fa-chevron-up close1" ></i></p>
+            </div>
+
+            <div class="faq2">
+            <h6 class="common-faqs">Am I limited to the bake designs on your website?<i class="fa-solid fa-chevron-down quest2"></i></h6>
+
+            <p class="faqs-response response2">No! Those photographs are merely examples of work we've done in the past. Please feel free to contact us over any inspirational designs you may find through other sites.<i class="fa-solid fa-chevron-up"></i></p>
+
+            </div>
+            <div class="faq3">
+            <h6 class="common-faqs">What if I don't like what I purchased?<i class="fa-solid fa-chevron-down quest3"></i></h6>
+
+            <p class="faqs-response response3">We rarely hear complaints about our products,If you have concerns about a purchase, please kindly return the product to us on the next business day following your purchase. We do not offer refunds on returned products but may work with you on a store credit or product exchange.<i class="fa-solid fa-chevron-up"></i></p>
+            
+          </div>
+            <div class="faq4">
+            <h6 class="common-faqs">What makes your products different?<i class="fa-solid fa-chevron-down quest4"></i></h6>
+            <p class="faqs-response response4">Well, you might have read once or twice that we are a scratch bakery, and that fact alone sets apart from most other bakeries. This improves the taste and quality of the products we make. Our bakes are not made in factories like those you might purchase from some grocery store bakeries. We never freeze our bakes, though that too is a common practice.<i class="fa-solid fa-chevron-up"></i></p>
+            </div>
+        </div>
+      
+      </section>
+
+      <!--footer-->
+      <footer id = "who are we">
+        <div class="footer-box">
+          <div class="account-step-box">
+            <h3 class="steps-heading contact-us">Contact us</h3>
+            <P class="contacts-details">hello@bakeworld.com</P>
+            <P class="contacts-details">+234(0)7030124105</P>
+            <P class="contacts-details">No 222 ipent 7 estate karsana district  Abuja</P>
+            
+          </div>
+          <div class="select-step-box">
+            <h3 class="select-step contact-us">who are we</h3>
+            <p class="about-us-details">about us</p>
+            <p class="about-us-details">privacy policies</p>
+            <p class="about-us-details">terms and condition</p>
+            <p class="about-us-details">refund policies</p>
+          </div>
+          <div class="delivery-step-box">
+            <h3 class="social-media-follow contact-us" >follows on</h3>
+            <div class="facebook-box social-media">
+              <i class="fa-brands fa-facebook"></i>
+              <p>facebook</p>
+            </div>
+            <div class="twitter-box social-media">
+              <i class="fa-brands fa-twitter"></i>
+              <p>twitter</p>
+            </div>
+            <div class="instagram-box social-media">
+              <i class="fa-brands fa-instagram"></i>
+              <p>instagram</p>
+            </div>
+            <div class="linkedin-box social-media">
+              <i class="fa-brands fa-linkedin"></i>
+              <p>linkedIn</p>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">Copyright &copy; 2023</p>
+      </footer>
+
     </div>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
