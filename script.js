@@ -55,7 +55,7 @@ cakesIcon.addEventListener("click", function () {
   breadIcon.style.backgroundColor = "#fff0f5";
 });
 
-/frequently ask question
+//frequently ask question
 //firstQuestion
 let firstQuestion = function () {
   document.querySelector(".response1").classList.toggle("hidden");
