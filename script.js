@@ -55,17 +55,40 @@ cakesIcon.addEventListener("click", function () {
   breadIcon.style.backgroundColor = "#fff0f5";
 });
 
-//faqs
-const response = document.querySelector(".faqs-response");
-const questionOne = document.querySelector('.quest1');
-const questionTwo = document.querySelector(".quest2");
-const questionThree = document.querySelector(".quest3");
-const questionFour = document.querySelector(".quest4");
+/frequently ask question
+//firstQuestion
+let firstQuestion = function () {
+  document.querySelector(".response1").classList.toggle("hidden");
+  document.querySelector(".icon-faqs").classList.toggle("hidden");
+  document.querySelector(".respnse-icon").classList.toggle("hidden");
+};
 
-questionOne.addEventListener('click', function(){
-response.classList.remove('response1')
-})
+document.querySelector(".icon-faqs").addEventListener("click", firstQuestion)
+document.querySelector(".respnse-icon").addEventListener("click", firstQuestion)
 
-document.querySelector('.close1').addEventListener('click', function(){
-  response.classList.toggle('response1') //add hidden class
-})
+//second question
+let secondQuestion =  function(){
+     document.querySelector(".response2").classList.toggle("hidden");
+     document.querySelector(".ficon-faqs").classList.toggle("hidden");
+     document.querySelector(".second-respnse-icon").classList.toggle("hidden");
+}
+document.querySelector(".ficon-faqs").addEventListener('click',secondQuestion )
+document.querySelector(".second-respnse-icon").addEventListener('click',secondQuestion)
+
+//third question
+let thirdQuestion = function(){
+     document.querySelector(".response3").classList.toggle("hidden");
+     document.querySelector(".sicon-faqs").classList.toggle("hidden");
+     document.querySelector(".third-respnse-icon").classList.toggle("hidden");
+}
+document.querySelector(".sicon-faqs").addEventListener("click",thirdQuestion);
+document .querySelector(".third-respnse-icon").addEventListener("click", thirdQuestion);
+
+//fourthquestion
+let fourthQuestion = function () {
+  document.querySelector(".response4").classList.toggle("hidden");
+  document.querySelector(".ticon-faqs").classList.toggle("hidden");
+  document.querySelector(".fourth-respnse-icon").classList.toggle("hidden");
+};
+document.querySelector(".ticon-faqs").addEventListener("click", fourthQuestion);
+document.querySelector(".fourth-respnse-icon").addEventListener("click",fourthQuestion);
