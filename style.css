@@ -97,6 +97,8 @@ a {
 header {
   background-color: #fff;
   padding: 10px;
+  position: sticky;
+  top:0;
 }
 
 .nav-menu:hover{
@@ -407,9 +409,12 @@ blockquote {
   margin-bottom: 24px;
   /* display: none; */
 }
-.response1,.response2,.response3,.response4{
-  display: none;
-}
+/* .FAQ-box{
+  background-color: azure;
+  border-radius: 5px; 
+  display: inline-block;
+  z-index: 5;
+} */
 
 /*footer*/
 .social-media {
@@ -531,3 +536,4 @@ footer {
       
     } */
   }
+
