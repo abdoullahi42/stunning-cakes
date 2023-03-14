@@ -1,10 +1,9 @@
-
 //mobile navigation
-const openCloseBar = function(){
+const openCloseBar = function () {
   document.querySelector(".close").classList.toggle("close-btn");
   document.querySelector(".items-nav").classList.toggle("hidden");
   document.querySelector(".open-bar").classList.toggle("hidden");
-}
+};
 document.querySelector(".open-bar").addEventListener("click", openCloseBar);
 document.querySelector(".close").addEventListener("click", openCloseBar);
 
@@ -55,6 +54,29 @@ cakesIcon.addEventListener("click", function () {
   breadIcon.style.backgroundColor = "#fff0f5";
 });
 
+//testimony slider functionality*/
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+const showslides = (n) => {
+  slides.forEach((slide) => {
+    slide.style.display = "none";
+  });
+  slides[n].style.display = "block";
+};
+
+const next = () => {
+  currentSlide >= slides.length - 1 ? (currentSlide = 0) : currentSlide++;
+  showslides(currentSlide);
+};
+
+const prev = () => {
+  currentSlide <= 0 ? (currentSlide = slides.length - 1) : currentSlide--;
+  showslides(currentSlide);
+};
+document.querySelector(".next").addEventListener("click", next);
+document.querySelector(".prev").addEventListener("click", prev);
+
 //frequently ask question
 //firstQuestion
 let firstQuestion = function () {
@@ -63,26 +85,32 @@ let firstQuestion = function () {
   document.querySelector(".respnse-icon").classList.toggle("hidden");
 };
 
-document.querySelector(".icon-faqs").addEventListener("click", firstQuestion)
-document.querySelector(".respnse-icon").addEventListener("click", firstQuestion)
+document.querySelector(".icon-faqs").addEventListener("click", firstQuestion);
+document
+  .querySelector(".respnse-icon")
+  .addEventListener("click", firstQuestion);
 
 //second question
-let secondQuestion =  function(){
-     document.querySelector(".response2").classList.toggle("hidden");
-     document.querySelector(".ficon-faqs").classList.toggle("hidden");
-     document.querySelector(".second-respnse-icon").classList.toggle("hidden");
-}
-document.querySelector(".ficon-faqs").addEventListener('click',secondQuestion )
-document.querySelector(".second-respnse-icon").addEventListener('click',secondQuestion)
+let secondQuestion = function () {
+  document.querySelector(".response2").classList.toggle("hidden");
+  document.querySelector(".ficon-faqs").classList.toggle("hidden");
+  document.querySelector(".second-respnse-icon").classList.toggle("hidden");
+};
+document.querySelector(".ficon-faqs").addEventListener("click", secondQuestion);
+document
+  .querySelector(".second-respnse-icon")
+  .addEventListener("click", secondQuestion);
 
 //third question
-let thirdQuestion = function(){
-     document.querySelector(".response3").classList.toggle("hidden");
-     document.querySelector(".sicon-faqs").classList.toggle("hidden");
-     document.querySelector(".third-respnse-icon").classList.toggle("hidden");
-}
-document.querySelector(".sicon-faqs").addEventListener("click",thirdQuestion);
-document .querySelector(".third-respnse-icon").addEventListener("click", thirdQuestion);
+let thirdQuestion = function () {
+  document.querySelector(".response3").classList.toggle("hidden");
+  document.querySelector(".sicon-faqs").classList.toggle("hidden");
+  document.querySelector(".third-respnse-icon").classList.toggle("hidden");
+};
+document.querySelector(".sicon-faqs").addEventListener("click", thirdQuestion);
+document
+  .querySelector(".third-respnse-icon")
+  .addEventListener("click", thirdQuestion);
 
 //fourthquestion
 let fourthQuestion = function () {
@@ -91,4 +119,6 @@ let fourthQuestion = function () {
   document.querySelector(".fourth-respnse-icon").classList.toggle("hidden");
 };
 document.querySelector(".ticon-faqs").addEventListener("click", fourthQuestion);
-document.querySelector(".fourth-respnse-icon").addEventListener("click",fourthQuestion);
+document
+  .querySelector(".fourth-respnse-icon")
+  .addEventListener("click", fourthQuestion);
